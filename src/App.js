@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import ClassComp from './components/classComp';
+import FunComp from './components/functionalComp';
+import { PropsComp } from './components/propsComp';
+import { PropsCompCLass } from './components/propsComp';
+import { StateCompClass } from './components/stateComp';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ClassComp></ClassComp>
+      <FunComp text="Functional Component Called on Click"></FunComp>
+      <PropsComp text={{name: 'madiha'}} data="Props in functionalComponent"></PropsComp>
+      <PropsCompCLass text={{name: 'madiha'}} data="Props in classComponent"></PropsCompCLass>
+      <StateCompClass></StateCompClass>
     </div>
   );
 }
