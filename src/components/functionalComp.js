@@ -7,7 +7,7 @@ export default function FunComp(props){
 
     return (
         <div>
-            <h1 onClick={red}>{props.text}</h1>
+            <p onClick={red}>{props.text}</p>
         </div>
     )
 }

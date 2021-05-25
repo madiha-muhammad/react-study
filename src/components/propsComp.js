@@ -6,8 +6,8 @@ export function PropsComp(props)
 {
     return(
         <div>
-            <h1>{props.text.name}</h1>
-            <h4>{props.data}</h4>
+            <p>{props.text.name}</p>
+            <p>{props.data}</p>
         </div>
     )
 }
@@ -19,8 +19,8 @@ export class PropsCompCLass extends React.Component
     {
         return(
             <div>
-                <h5>{this.props.text.name}</h5>
-                <h1>{this.props.data}</h1>
+                <p>{this.props.text.name}</p>
+                <p>{this.props.data}</p>
             </div>
         )
     }

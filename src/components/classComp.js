@@ -13,7 +13,7 @@ class ClassComp extends React.Component {
     render() {
         return (
             <div>
-                <h1>CLass Component</h1>
+                <p>CLass Component</p>
             </div>
         )
     }
